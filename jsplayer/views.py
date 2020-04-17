@@ -17,7 +17,7 @@ def upload(request):
 
         g = os.path.join(settings.MEDIA_ROOT,s)
 
-        ff = ffmpy.FFmpeg(inputs={g: None}, outputs={'outpu11t.mp4': '-c:v hevc_nvenc'})
+        ff = ffmpy.FFmpeg(inputs={g: None}, outputs={'outpu11t.mp4': '-c:v hevc'})
         ff.run()
 
         # stream = ffmpeg.input(g)
